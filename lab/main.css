@@ -1,0 +1,78 @@
+/* Основні стилі для всього тіла */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Заголовки секцій */
+section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Секція "Про мене" */
+#about p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Стилі для карток у секції "Роботи" */
+#works .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#works .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#works .card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Форма в секції "Контакти" */
+#contact form {
+    margin-top: 2rem;
+}
+
+#contact input, #contact textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.75rem;
+}
+
+#contact button {
+    margin-top: 1rem;
+}
+
+/* Навігаційна панель */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #ddd !important;
+}
+/* Фіксований розмір зображень у картках */
+#works .card-img-top {
+    width: 100%;          /* Робить зображення адаптивним за шириною картки */
+    height: 200px;        /* Фіксує висоту */
+    object-fit: cover;    /* Обрізає зображення по краях, щоб зберегти пропорції */
+    object-position: center; /* Центрує зображення всередині картки */
+}
